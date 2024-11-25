@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Interactive Website</title>
+
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+        }
+
+        .dynamic-time {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .change-color {
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: #e9ecef;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            margin-top: 30px;
+        }
+
+        .form-container input {
+            margin: 10px 0;
+        }
+
+        .hover-text {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .hover-text:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Dynamic Time Display -->
+    <div class="dynamic-time" id="dynamicTime">
+        <script>
+            function updateTime() {
+                const currentTime = new Date();
+                document.getElementById("dynamicTime").innerHTML = currentTime.toLocaleTimeString();
+            }
+
+            setInterval(updateTime, 1000);  // Update time every second
+        </script>
+        Current Time: <span id="time"></span>
+    </div>
+
+    <!-- Display Text on Image Hover -->
+    <div class="image-container">
+        <img src="fb061c9b-b7d0-4d12-98e0-b7bde19b3192.webp" alt="Cricket Field" onmouseover="displayText()" onmouseout="hideText()">
+        <p id="hoverText" style="display:none;">Welcome to the Cricket Field!</p>
+        <script>
+            function displayText() {
+                document.getElementById("hoverText").style.display = "block";
+            }
+
+            function hideText() {
+                document.getElementById("hoverText").style.display = "none";
+            }
+        </script>
+    </div>
+
+    <!-- Change Background Color on Click -->
+    <div class="change-color" onclick="changeBackgroundColor()">
+        Click here to change background color!
+        <script>
+            function changeBackgroundColor() {
+                document.body.style.backgroundColor = "lightblue";
+            }
+        </script>
+    </div>
+
+    <!-- Change Text on Hover -->
+    <div class="hover-text">
+        Hover over this text to change its color.
+    </div>
+
+    <!-- Form Validation Using JavaScript -->
+    <div class="form-container">
+        <h3>Register for Cricket Updates</h3>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <script>
+            function validateForm() {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const age = document.getElementById("age").value;
+
+                if (name == "" || email == "" || age == "") {
+                    alert("All fields must be filled out!");
+                    return false;
+                }
+                // Age validation
+                if (age < 18) {
+                    alert("You must be at least 18 years old to register.");
+                    return false;
+                }
+                alert("Registration successful!");
+                return true;
+            }
+        </script>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

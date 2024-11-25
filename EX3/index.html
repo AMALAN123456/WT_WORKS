@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Image Map</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom styles */
+        h1 {
+            color: darkgreen;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Custom class for the image */
+        .cricket-field {
+            border: 2px solid darkgreen;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<!-- Container for the content -->
+<div class="container my-4">
+    <!-- Heading -->
+    <h1 class="display-4">Interactive Cricket Field</h1>
+
+    <!-- Image with map -->
+    <div class="text-center">
+        <img class="cricket-field" src="fb061c9b-b7d0-4d12-98e0-b7bde19b3192.webp" usemap="#cricketmap" alt="Cricket Field">
+    </div>
+
+    <!-- Image map areas -->
+    <map name="cricketmap">
+        <area shape="rect" coords="100,100,300,300" alt="Player Stats" href="player_stats.html" class="btn btn-success m-1" target="_blank">
+        <area shape="circle" coords="500,150,50" alt="Scoreboard" href="scoreboard.html" class="btn btn-primary m-1" target="_blank">
+        <area shape="poly" coords="350,200,400,250,350,300" alt="Match Details" href="match_details.html" class="btn btn-info m-1" target="_blank">
+        <area shape="rect" coords="600,50,750,150" alt="Team Lineup" href="team_lineup.html" class="btn btn-warning m-1" target="_blank">
+    </map>
+</div>
+
+<!-- Add Bootstrap JS and dependencies (Optional for interactive features) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

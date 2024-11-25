@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .scoreboard {
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .team-score {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .team-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .score-stats {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+
+        .team-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .team-logo {
+            max-width: 60px;
+            border-radius: 50%;
+        }
+
+        .match-status {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .over-info {
+            font-size: 1.1rem;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Scoreboard Header -->
+    <h1 class="text-center my-5">Live Cricket Scoreboard</h1>
+
+    <!-- Scoreboard Card -->
+    <div class="scoreboard card">
+        <div class="row">
+            <!-- Team 1 -->
+            <div class="col-md-6">
+                <div class="team-card">
+                    <div class="team-name">
+                        <img src="team1_logo.jpg" alt="Team 1" class="team-logo"> Team A
+                    </div>
+                    <div class="team-score">
+                        <strong>Score:</strong> 250/6
+                    </div>
+                    <div class="score-stats">
+                        <p><strong>Wickets:</strong> 6</p>
+                        <p><strong>Overs:</strong> 45.3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 2 -->
+            <div class="col-md-6">
+                <div class="team-card">
+                    <div class="team-name">
+                        <img src="team2_logo.jpg" alt="Team 2" class="team-logo"> Team B
+                    </div>
+                    <div class="team-score">
+                        <strong>Score:</strong> 230/5
+                    </div>
+                    <div class="score-stats">
+                        <p><strong>Wickets:</strong> 5</p>
+                        <p><strong>Overs:</strong> 43.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Match Status -->
+        <div class="match-status text-center">
+            <p><strong>Match Status:</strong> <span class="text-success">Ongoing</span></p>
+        </div>
+
+        <!-- Over Information -->
+        <div class="over-info text-center">
+            <p><strong>Current Over:</strong> 46.1</p>
+            <p><strong>Bowler:</strong> John Doe</p>
+        </div>
+    </div>
+
+    <!-- Additional Stats and Buttons -->
+    <div class="text-center my-4">
+        <button class="btn btn-primary">View Full Scorecard</button>
+        <button class="btn btn-secondary">Refresh</button>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

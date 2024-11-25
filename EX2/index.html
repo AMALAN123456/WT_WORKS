@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Image Map</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkgreen;
+        }
+
+        /* Style for the image map */
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* External CSS styling applied to links */
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+
+    <!-- External CSS (simulated in the same file) -->
+    <style id="external-css">
+        .cricket-field {
+            border: 2px solid darkgreen;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Interactive Cricket Field</h1>
+
+<!-- Adding the external class to style the image -->
+<img class="cricket-field" src="fb061c9b-b7d0-4d12-98e0-b7bde19b3192.webp" usemap="#cricketmap" alt="Cricket Field">
+
+<map name="cricketmap">
+    <!-- Rectangular area for player stats link -->
+    <area shape="rect" coords="100,100,300,300" alt="Player Stats" href="player_stats.html" target="_blank">
+    
+    <!-- Circular area for the scoreboard link -->
+    <area shape="circle" coords="500,150,50" alt="Scoreboard" href="scoreboard.html" target="_blank">
+    
+    <!-- Polygonal area for match details link -->
+    <area shape="poly" coords="350,200,400,250,350,300" alt="Match Details" href="match_details.html" target="_blank">
+    
+    <!-- Another rectangular area for team lineup -->
+    <area shape="rect" coords="600,50,750,150" alt="Team Lineup" href="team_lineup.html" target="_blank">
+</map>
+
+</body>
+</html>

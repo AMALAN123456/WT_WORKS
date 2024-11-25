@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details - Cricket</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .match-card {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .match-card-header {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .match-card-body {
+            padding: 20px;
+        }
+
+        .team-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .match-status {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #dc3545;
+        }
+
+        .team-logo {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        .date-time {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+
+        .venue {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Container for the match details -->
+<div class="container my-5">
+
+    <!-- Match Info -->
+    <h1 class="text-center mb-4">Cricket Match Details</h1>
+
+    <!-- Match Card -->
+    <div class="card match-card">
+        <div class="card-header match-card-header">
+            <h3 class="text-center">Upcoming Match</h3>
+        </div>
+        <div class="card-body match-card-body">
+            <!-- Match Date, Time, and Venue -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="date-time">Date: <strong>December 5, 2024</strong></p>
+                    <p class="date-time">Time: <strong>10:00 AM IST</strong></p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p class="venue">Venue: <strong>Melbourne Cricket Ground</strong></p>
+                </div>
+            </div>
+
+            <!-- Teams Section -->
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <div class="team-info">
+                        <img src="team1_logo.jpg" alt="Team 1" class="team-logo">
+                        <p class="team-name">Team A</p>
+                        <p>Captain: <strong>John Doe</strong></p>
+                        <p>Key Player: <strong>Alex Smith</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="team-info">
+                        <img src="team2_logo.jpg" alt="Team 2" class="team-logo">
+                        <p class="team-name">Team B</p>
+                        <p>Captain: <strong>Jane Smith</strong></p>
+                        <p>Key Player: <strong>Chris Johnson</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Match Status -->
+            <div class="match-status text-center">
+                <p><strong>Match Status:</strong> <span class="text-warning">Scheduled</span></p>
+            </div>
+
+            <!-- Additional Match Info -->
+            <div class="text-center">
+                <button class="btn btn-primary">View Full Match Schedule</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS and dependencies (Optional for interactive features) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

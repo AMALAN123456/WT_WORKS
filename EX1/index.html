@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Image Map</title>
+</head>
+<body>
+
+<h1>Interactive Cricket Field</h1>
+
+<img src="EX1/fb061c9b-b7d0-4d12-98e0-b7bde19b3192.webp" usemap="#cricketmap" alt="Cricket Field">
+
+<map name="cricketmap">
+    <!-- Rectangular area for player stats link -->
+    <area shape="rect" coords="100,100,300,300" alt="Player Stats" href="player_stats.html">
+    
+    <!-- Circular area for the scoreboard link -->
+    <area shape="circle" coords="500,150,50" alt="Scoreboard" href="scoreboard.html">
+    
+    <!-- Polygonal area for match details link -->
+    <area shape="poly" coords="350,200,400,250,350,300" alt="Match Details" href="match_details.html">
+    
+    <!-- Another rectangular area for team lineup -->
+    <area shape="rect" coords="600,50,750,150" alt="Team Lineup" href="team_lineup.html">
+</map>
+
+</body>
+</html>
