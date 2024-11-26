@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>PageCounterServlet</servlet-name>
+    <servlet-class>PageCounterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageCounterServlet</servlet-name>
+    <url-pattern>/PageCounterServlet</url-pattern>
+</servlet-mapping>
