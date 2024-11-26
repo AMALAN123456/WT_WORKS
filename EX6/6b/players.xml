@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+    <player>
+        <id>1</id>
+        <name>Player 1</name>
+        <team>Team A</team>
+        <runs>350</runs>
+    </player>
+    <player>
+        <id>2</id>
+        <name>Player 2</name>
+        <team>Team B</team>
+        <runs>280</runs>
+    </player>
+    <player>
+        <id>3</id>
+        <name>Player 3</name>
+        <team>Team C</team>
+        <runs>400</runs>
+    </player>
+</players>
